@@ -19,11 +19,11 @@ function App() {
   };
 
   const income= transactions
-         .filter( (t)=> t.type === "income")
+         .filter( (t)=> t.type === "income"&& t.isIssued===true)
          .reduce((acc,t)=> acc + t.amount,0);
 
   const expense= transactions
-         .filter((t)=> t.type === "expense")
+         .filter((t)=> t.type === "expense"&&t.isIssued===true)
          .reduce((acc,t)=> acc + t.amount,0);     
          
          
