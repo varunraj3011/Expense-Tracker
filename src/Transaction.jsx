@@ -1,4 +1,4 @@
-import React,{use, useState} from "react"
+import React,{ useState} from "react"
 function Transaction({ addTransaction}){
     const[amount,setAmount]=useState("");
     const[type,setType]=useState("income");
@@ -15,8 +15,9 @@ function Transaction({ addTransaction}){
             amount: parseFloat(amount),
             type: type,
             category: category,
-            date: new Date().getMonth() + 1,
+            date: new Date().toLocaleString(),
             isIssued:true,
+            
            
         });
 
@@ -28,8 +29,9 @@ function Transaction({ addTransaction}){
 
 
     return(
-        <div>
+        <div className="addtranstion">
           <form onSubmit={handleSubmit}>
+            <h3 className="ADDTITLE">Add Transaction</h3>
             <input type="number" value={amount}
               onChange={(e)=> setAmount(e.target.value)}
               placeholder="Enter amount"/>
@@ -38,7 +40,6 @@ function Transaction({ addTransaction}){
                 <option value="income">Income</option>
                 <option value="expense">Expense</option>
               </select>
-
             <select value={category} onChange={(e)=>setCategory(e.target.value)}>
             
               <option value="">select category</option>
@@ -57,6 +58,8 @@ function Transaction({ addTransaction}){
             <option value="grocery">Grocery</option>
             <option value="medical">Medical</option>
             <option value="service">Service</option>
+            <option value="rent">Rent</option>
+            <option value="Enjoyment">Enjoyment</option>
           </>)}
            </select>
 

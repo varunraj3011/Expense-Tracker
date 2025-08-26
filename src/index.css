@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Lato, sans-serif;
+}
+
+body {
+  background-color: rgb(248, 245, 245);
+}
+
+
+/*******NAVIGATION CSS***********/
+nav {
+  background-color: white;
+  padding: 15px 30px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 1px 2px,
+              rgba(0, 0, 0, 0.23) 0px 1px 6px;
+}
+
+
+/****COMBINED BALNCED OVERVIEW AND ADD TRANSACTION CSS**/
+.mains {
+  background-color: rgb(248, 245, 245);
+  display: flex;
+  justify-content: center; /* optional: center content */
+}
+
+
+
+
+/******* BALANCE OVERVIEW CSS***********/
+
+
+.balance-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+    box-shadow: 
+    0 10px 15px -3px rgba(0, 0, 0, 0.1), 
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  max-width: 880px;
+  width: 100%;
+  margin: 35px ;
+  
+  box-sizing: border-box;
+}
+
+.balance-card .card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.balance-card .main {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.cart {
+  
+  padding: 40px 30px;
+  border-radius: 12px;
+  text-align: center;
+  min-width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+ background:background-color rgb(248, 245, 245);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  width: 350px;
+  font-family: Arial, sans-serif;
+  transition: all 0.3s ease;
+}
+
+.carts .title {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+.carts .amount {
+  font-size: 22px;
+  font-weight: bold;
+  color: #000;
+  margin-top: 5px;
+}
+
+.carts:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 6px 14px rgba(0,0,0,0.12);
+}
+
+
+
+
+/******* ADD TRANSACTION CSS***********/
+
+
+
+.addtranstion {
+  display: flex;                  /* Makes children align in a row */
+  justify-content: space-between; /* Space between left & right sections */
+  margin: 35px;                   /* Outer spacing */
+  background-color: #ffffff;      /* White card */
+  padding: 2.5rem;                /* Inner spacing (big padding) */
+  border-radius: 0.75rem;         /* Rounded corners */
+  box-shadow: 
+    0 10px 15px -3px rgba(0, 0, 0, 0.1), 
+    0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Soft shadow */
+  width: 780px;                   /* Fixed width */
+  box-sizing: border-box;         /* Includes padding inside width */
+}
+.addtranstion .ADDTITLE{
+    font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+.addtranstion form input{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+ background:background-color rgb(248, 245, 245);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  font-family: Arial, sans-serif;
+  transition: all 0.3s ease;
+  border: none;
+  margin-top: 10px;
+}
+.addtranstion form select{
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  /* makes them expand evenly */
+  min-width: 150px;
+  cursor: pointer;
+
+}
+.add-transaction form select option {
+   padding: 10px;
+  background: #fff;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+.addtranstion button{
+  margin-top: 10px;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  width: 400px;
+  cursor: pointer;
+  background-color:  #3b82f6;
+  color: #ffffff;
+  transition: background-color 0.2s ease-in-out;
+}
+.addtranstion   button:hover {
+            background-color: #2563eb;
+        }
+
+
+
+ /*** ADD TRANSACTION LIST CSSS**/       
+.addtransactionlikst{
+    background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+    box-shadow: 
+    0 10px 15px -3px rgba(0, 0, 0, 0.1), 
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  max-width: 880px;
+  width: 100%;
+  margin: 35px ;
+  box-sizing: border-box;
+}
+.addtransactionlikst .addtitle{
+     font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+.addtransactionlikst .taable{
+   display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.transaction-table {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.transaction-table th,
+.transaction-table td {
+  border: 1px solid #ffdddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.transaction-table th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+
+
+.transaction-table button {
+  padding: 5px 10px;
+   cursor: pointer;
+  background-color:  #3b82f6;
+  color: #ffffff;
+  transition: background-color 0.2s ease-in-out;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.transaction-table button:hover {
+  background-color: #2563eb;
+}
+
+
+
+/***CHART EDIT***/
+
+.charts{               
+  margin: 35px;                   /* Outer spacing */
+  background-color: #ffffff;      /* White card */
+  padding: 2.5rem;                /* Inner spacing (big padding) */
+  border-radius: 0.75rem;         /* Rounded corners */
+  box-shadow: 
+    0 10px 15px -3px rgba(0, 0, 0, 0.1), 
+    0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Soft shadow */
+  width: 480px;                   /* Fixed width */
+  box-sizing: border-box;  
+}
+ .charts-input .onest,.second {
+  gap: 15px;
+ background:background-color rgb(248, 245, 245);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  font-family: Arial, sans-serif;
+  transition: all 0.3s ease;
+  border: none;
+  margin-top: 10px;
+  height: 40px;
+}
+.charts .addtitle{
+ font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;}

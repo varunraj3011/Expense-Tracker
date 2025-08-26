@@ -1,9 +1,9 @@
 
 function Header(){
     return(
-        <div>
-            <h1>📱EXPENSE TRACKER</h1>
-        </div>
+        <nav >
+   <h1>EXPENSE TRACKER </h1>
+        </nav>
     )
 }
 export default Header

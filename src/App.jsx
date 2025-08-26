@@ -34,10 +34,11 @@ function App() {
   return (
     <>
      <Header/>
-     <Balance  balance={balance} income={income} expense={expense}/>
-     <Transaction addTransaction={addTransaction}/>
-     <TransactionList transactions={transactions}  setTransactions={setTransactions}/>
-     <Chart transactions={transactions}/>
+     <div className="mains"><Balance  balance={balance} income={income} expense={expense}/>
+     <Transaction addTransaction={addTransaction}/></div>
+    <div className="mains">
+      <TransactionList transactions={transactions}  setTransactions={setTransactions}/>
+     <Chart transactions={transactions}/></div> 
     </>
   );
 }
