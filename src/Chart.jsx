@@ -37,7 +37,7 @@ return matchCategory && matchMonth;
     }, {})
   );
 
-  const COLORS = ["#4caf50", "#2156d2ff", "#2196f3", "#ff9800", "#9c27b0"];
+  const COLORS = ["#ad3af0ff","#4caf50", "#2156d2ff", "#2196f3", "#ff9800", "#9c27b0"];
 
 
   return (

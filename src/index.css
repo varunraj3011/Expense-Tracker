@@ -271,3 +271,136 @@ nav {
   font-weight: bold;
   margin-bottom: 20px;
   color: #333;}
+
+
+
+
+  /* ----------- Tablets (max-width: 992px) ----------- */
+@media (max-width: 992px) {
+  .mains {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .balance-card,
+  .addtranstion,
+  .addtransactionlikst,
+  .charts {
+    width: 90%;   /* Make them take almost full width */
+    margin: 20px auto;
+  }
+
+  .balance-card .main {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .carts {
+    width: 100%;   /* Full width inside container */
+  }
+
+  .addtranstion {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .addtranstion form input,
+  .addtranstion form select,
+  .addtranstion button {
+    width: 100%;
+  }
+}
+
+/* ----------- Mobile (max-width: 768px) ----------- */
+@media (max-width: 768px) {
+  nav {
+    padding: 10px 20px;
+  }
+
+  .balance-card,
+  .addtranstion,
+  .addtransactionlikst,
+  .charts {
+    padding: 1.5rem;
+    margin: 15px auto;
+  }
+
+  .carts {
+    padding: 15px;
+    text-align: left;
+  }
+
+  .transaction-table {
+    font-size: 12px; /* smaller text */
+  }
+
+  .transaction-table th,
+  .transaction-table td {
+    padding: 6px;
+  }
+
+  .addtranstion form input,
+  .addtranstion form select,
+  .addtranstion button {
+    font-size: 14px;
+    padding: 8px;
+  }
+   .charts-input .onest,.second{
+    font-size: 14px;
+    padding: 8px;}
+}
+
+/* ----------- Small Mobile (max-width: 480px) ----------- */
+@media (max-width: 480px) {
+  nav {
+    padding: 8px 12px;
+    text-align: center;
+  }
+
+  .balance-card .card-title,
+  .addtranstion .ADDTITLE,
+  .addtransactionlikst .addtitle,
+  .charts .addtitle {
+    font-size: 16px;
+  }
+
+  .carts .amount {
+    font-size: 18px;
+  }
+
+  .transaction-table {
+    display: block;
+    overflow-x: auto; /* scrollable table */
+    white-space: nowrap;
+  }
+
+  .addtranstion {
+    padding: 1rem;
+  }
+
+  .addtranstion button {
+    height: 40px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .charts-input {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .charts-input input {
+    width: 90%;
+  }
+}
+
+/* Small mobile screens */
+@media (max-width: 480px) {
+  .charts-input .onest,.second {
+    font-size: 12px;
+    padding: 8px;
+    width: 100%;
+  }
+}
